@@ -20,13 +20,13 @@ https://github.com/user-attachments/assets/686e0a66-9b57-48f0-a74e-491654a8ef95
 
 ```bash
 git clone https://github.com/SwekeR-463/ROS2.git
-cd ros2_turtlesim_spiral
+cd ROS2
 ```
 
 ## Build the Package
 ```bash
 colcon build --packages-select <package_name>
-source install/setup.bash3.
+source install/setup.bash
 ```
 ## Run the Publisher Node
 ```bash
