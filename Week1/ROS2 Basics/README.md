@@ -25,22 +25,22 @@ cd ROS2
 
 ## Build the Package
 ```bash
-colcon build --packages-select <package_name>
+colcon build --packages-select py_spiral
 source install/setup.bash
 ```
 ## Run the Publisher Node
 ```bash
-ros2 run <package_name> py_spiral_pub <linear_velocity> <initial_angular_velocity> <angular_increment>
+ros2 run py_spiral py_spiral_pub <linear_velocity> <initial_angular_velocity> <angular_increment>
 ```
 ## Example
 To run the publisher node with a linear velocity of 2.0, an initial angular velocity of 1.0, and an angular increment of 0.1, use:
 ```bash
-ros2 run <package_name> py_spiral_pub 2.0 1.0 0.14
+ros2 run py_spiral py_spiral_pub 2.0 1.0 0.14
 ```
 ## Run the Subscriber Node
 In another terminal, run the subscriber node to listen to the velocity commands:
 ```bash
-ros2 run <package_name> py_spiral_sub
+ros2 run py_spiral py_spiral_sub
 ```
 ## Example Output
 The subscriber will log messages similar to the following:
